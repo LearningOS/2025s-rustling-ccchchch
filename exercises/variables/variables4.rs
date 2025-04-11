@@ -1,12 +1,6 @@
-// variables4.rs
-//
-// Execute `rustlings hint variables4` or use the `hint` watch subcommand for a
-// hint.
-
-
 fn main() {
-    let mut x = 3;
+    let mut x = 3; // 声明可变变量 x 并初始化为 3
     println!("Number {}", x);
-    x = 5; // don't change this line
+    x = 5; // 修改 x 的值
     println!("Number {}", x);
 }

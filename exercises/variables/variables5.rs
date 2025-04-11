@@ -1,12 +1,7 @@
-// variables5.rs
-//
-// Execute `rustlings hint variables5` or use the `hint` watch subcommand for a
-// hint.
-
-
 fn main() {
-    let number = "T-H-R-E-E"; // don't change this line
+    let number = "T-H-R-E-E"; // 字符串类型
     println!("Spell a Number : {}", number);
-    let number = 3; // don't rename this variable
+    
+    let number = 3; // 遮蔽前一个变量，现在是整数类型
     println!("Number plus two is : {}", number + 2);
 }
