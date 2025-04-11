@@ -1,27 +1,16 @@
-// functions4.rs
-//
-// This store is having a sale where if the price is an even number, you get 10
-// Rustbucks off, but if it's an odd number, it's 3 Rustbucks off. (Don't worry
-// about the function bodies themselves, we're only interested in the signatures
-// for now. If anything, this is a good way to peek ahead to future exercises!)
-//
-// Execute `rustlings hint functions4` or use the `hint` watch subcommand for a
-// hint.
-
-
 fn main() {
-    let original_price = 51;
-    println!("Your sale price is {}", sale_price(original_price));
+    let original_price = 51;  // 设置原价
+    println!("Your sale price is {}", sale_price(original_price));  // 输出打折后的价格
 }
 
-fn sale_price(price: i32) -> i32 {
-    if is_even(price) {
-        price - 10
-    } else {
-        price - 3
+fn sale_price(price: i32) -> i32 {  // 计算打折后价格的函数
+    if is_even(price) {  // 如果是偶数
+        price - 10  // 打 10 Rustbucks 的折扣
+    } else {  // 如果是奇数
+        price - 3  // 打 3 Rustbucks 的折扣
     }
 }
 
-fn is_even(num: i32) -> bool {
-    num % 2 == 0
+fn is_even(num: i32) -> bool {  // 判断是否是偶数
+    num % 2 == 0  // 偶数条件：num % 2 等于 0
 }
